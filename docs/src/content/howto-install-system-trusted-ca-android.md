@@ -70,6 +70,18 @@ adb root
 ```bash
 adb shell "mount -o rw,remount /"
 ```
+- In case you receive a result like the following one:
+
+```bash
+adb shell "mount -o rw,remount /"
+'/dev/root' is read-only
+```
+
+- Execute the following command too, that should :
+
+```bash
+adb remount
+```
 
 - Push your certificate to the system certificate store and set file permissions
   
